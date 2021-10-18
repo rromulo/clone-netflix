@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+.container{
+    max-width: 1480px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+:root{
+    --cinza: #ccc;
+    --cinzaEscuro: rgb(29, 29, 29);
+    --preta: #141414;
+    --vermelho: #E50914;
+}
+body{
+    background-color: black;
+    color: white;
+}
+/*INICIO DO ESTILO DO HEADER*/
+header{
+    background: var(--cinzaEscuro);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+}
+header div.container{
+    justify-content: space-between;
+    width: 100%;
+}
+header h2{
+    color: var(--vermelho);
+    font-size: 4em;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav ul{
+    justify-content: space-between;
+    list-style-type: none;
+}
+header nav ul li{
+    margin: 0 10px;
+}
+header nav a{
+    color: var(--cinza);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.2em;
+}
+header nav a:hover{
+    color:white;
+}
+/*FIM DO ESTILO DO HEADER*/
+
+/*INICIO ESTILO SECTION MAIN_MOVIE*/
+section.main_movie div.container{
+    max-width: 100%;
+    font-size: 1.1em;
+    height: 60vh;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.253), black),url('../images/capa-house.jpg');
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 2%;
+}
+.tittle_movie{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+p.description{
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+.btn{
+    width: 260px;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: var(--vermelho);
+    padding: 16px 30px;
+    cursor: pointer;
+    margin: 0 4px;
+    transition: 0.3s;
+    font-size: 1em;
+}
+.btn:hover{
+    background-color: var(--cinza);
+    color: var(--preta);
+}
+.btn i{
+    margin: 0 5px;
+    font-size: 1.2em;
+}
+
+/*SECTION CAROUSEL_MOVIE*/
+section.carousel-movies{
+    margin-top: 40px;
+}
+.box-movie{
+    height: 40vh;
+    max-width: 100%;
+    display: block;
+}
+.box-movie img{
+    height: 100%;
+}

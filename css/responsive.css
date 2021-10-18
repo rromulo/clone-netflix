@@ -1,0 +1,44 @@
+@media (max-width: 768px){
+    header{
+        height: auto;
+    }
+    header .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul{
+        text-align: center;
+    }
+    header nav ul li{
+        margin-bottom: 10px;
+    }
+    div.buttons button{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 580px){
+    section.main_movie{
+        text-align: center;
+    }
+    section.main_movie h3{
+        margin: 20px auto;
+    }
+}
+@media (max-width: 480px){
+    header nav{
+        width: 100%;
+    }
+    header ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header nav ul li a{
+        display: block;
+    }
+    section.main_movie div.container{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+}
